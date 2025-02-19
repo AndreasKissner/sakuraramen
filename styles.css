@@ -1,0 +1,211 @@
+/* Variables for css */
+:root {
+    /* Colors general */
+    --Default_text: #000000;
+    --dish_price_text: #675E54;
+    --h2_text: #9F0908;
+    --footer: #0A141E;
+    --color_standard_white: white;
+
+
+    /* Fonts familys */
+    --fonts-family-raleway_bold: "Raleway_Bold";
+    --fonts-family-raleway_regular: "Raleway_Regular";
+    --fonts-family-economica_bold: "Economica_Bold";
+}
+
+
+@font-face {
+    font-family: 'Raleway_Bold';
+    src: url('fonts/raleway/Raleway-Bold.woff2') format('woff2'),
+        url('fonts/raleway/Raleway-Bold.woff') format('woff'),
+        url('fonts/raleway/Raleway-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway_Regular';
+    src: url('fonts/raleway//Raleway-Regular.woff2') format('woff2'),
+        url('fonts/raleway/Raleway-Regular.woff') format('woff'),
+        url('fonts/raleway/Raleway-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Economica_Bold';
+    src: url('fonts/economica/Economica-Bold.woff2') format('woff2'),
+        url('fonts/economica/Economica-Bold.woff') format('woff'),
+        url('fonts/economica/Economica-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    box-sizing: border-box;
+    color: var(--color_standard_white);
+    font-family: var(--fonts-family-raleway_regular);
+    font-size: 24px;
+    width: 100%;
+    /* max-width: 1440px; */
+}
+
+
+/* removes all margin and padding (by browser automatic) */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global CSS */
+
+h2{
+    color: var(--h2_text);
+    font-family: var(--fonts-family-raleway_bold);
+    font-size: 80px;
+    color: var(--h2_text);
+}
+
+p{
+    color: var(--Default_text);
+    font-family: var(--fonts-family-economica_bold);
+    font-size: 56px;
+}
+
+
+/* ============================ Header Container Hero =============================== */ 
+#header_hero_container {
+    background-image: url('./img/1_hero/JPG/hero_bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+
+}
+
+/* Container with Logo left and nav right with 4 link  */
+
+
+#container_logo_nav{
+  
+    display: flex;
+    height: 112px;
+    justify-content: space-around;
+    width: 100%;
+  
+   
+  
+}
+
+/* Logo flower rose */
+.sakura_logo {
+    height: 64px;
+    margin-top: 20px;
+    width: 64px;
+}
+
+/* Nav bar css */
+
+.navigation-header{
+    display: flex;
+    max-width: 700px;
+    width: 100%;
+
+}
+
+.navigation-header ul{
+    align-items: center;
+    display: flex;
+    gap: 55px;
+    justify-content: center;
+    list-style: none;
+    width: 100%;
+}
+
+/* Img telephone in nav */
+nav img {
+    height: 20px;
+    width: auto;
+}
+
+.navigation-header a{
+    color: var(--color_standard_white);
+    text-decoration: none;
+}
+
+.navigation-header a:hover{
+    text-decoration: underline;
+    text-decoration-color: red;
+}
+
+/* Nth of type takes a tag in the 4th link (only this a tag is processed) */
+.navigation-header ul li:nth-of-type(4) a {
+    align-items: center;
+    background-color: var(--h2_text);
+    border: 2px solid white;
+    border-radius: 10px;
+    display: flex;
+    gap: 10px;
+    padding:10px;
+    text-decoration: none;
+}
+.navigation-header ul li:nth-of-type(4) a:hover{
+    background-color: rgb(219, 95, 18);
+    font-weight: 600;
+}
+
+/* Container with title of enterprice and slogan with Display:Flex */
+.container_title_slogan {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top:80px;
+    width: 100%;
+}
+
+/* H1  */
+.title-name {
+    font-family: var(--fonts-family-raleway_bold);
+    font-size: 96px;
+}
+
+
+/* p under H1 */
+.slogan{
+    color: var(--color_standard_white);
+    font-size: 24px;
+    font-family: var(--fonts-family-raleway_regular);
+}
+
+/* ============================End of Header Container Hero =============================== */ 
+
+
+
+/*  ============================ HOW TO ORDER CONTAINER =============================== */
+
+#how_to_order{
+    border: 2px solid black;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin:120px 0 120px;
+}
+
+.container_pick_your_order img{
+    width: 128px;
+}
+
+/*  ============================ END OF HOW TO ORDER CONTAINER =============================== */
+
